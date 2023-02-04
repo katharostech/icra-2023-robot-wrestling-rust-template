@@ -1,0 +1,7 @@
+[package]
+name = "participant"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+webots = { git = "https://github.com/katharostech/webots-rust" }
