@@ -148,9 +148,9 @@ checksum = "19b17cddbe7ec3f8bc800887bab5e717348c95ea2ca0b1bf0837fb964dc67099"
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.50"
+version = "1.0.51"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ef7d57beacfaf2d8aee5937dab7b7f28de3cb8b1828479bb5de2a7106f2bae2"
+checksum = "5d727cae5b39d21da60fa540906919ad737832fe0b1c165da3a34d6548c849d6"
 dependencies = [
  "unicode-ident",
 ]
@@ -211,7 +211,7 @@ checksum = "84a22b9f218b40614adcb3f4ff08b703773ad44fa9423e4e0d346d5db86e4ebc"
 [[package]]
 name = "webots"
 version = "0.1.0"
-source = "git+https://github.com/katharostech/webots-rust#a362527f173d9d513987c65f713e8de715182dc3"
+source = "git+https://github.com/katharostech/webots-rust#3d86e547215fea0cf4b684edbfa3ac7ffae1567c"
 dependencies = [
  "bindgen",
 ]
