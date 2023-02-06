@@ -1,9 +1,10 @@
+use std::time::Duration;
 use webots::prelude::*;
 
-const MOVE_DELAY: u32 = 100;
+const MOVE_DELAY: Duration = Duration::from_millis(800);
 
 struct Participant {
-    loop_counter: u32,
+    move_timer: Duration,
     arm_up: bool,
     arm_motor: Motor,
 }
@@ -13,17 +14,16 @@ impl Robot for Participant {
         let arm_motor = Motor::new("RShoulderPitch");
         arm_motor.set_velocity(arm_motor.max_velocity());
         Participant {
+            move_timer: Duration::ZERO,
             arm_motor,
-            loop_counter: 0,
             arm_up: false,
         }
     }
 
-    fn step(&mut self) {
-        self.loop_counter += 1;
-
-        if self.loop_counter > MOVE_DELAY {
-            self.loop_counter = 0;
+    fn step(&mut self, time: StepTime) {
+        self.move_timer += time.delta;
+        if self.move_timer > MOVE_DELAY {
+            self.move_timer = Duration::ZERO;
 
             if !self.arm_up {
                 self.arm_motor.set_position(self.arm_motor.max_position());
@@ -36,5 +36,5 @@ impl Robot for Participant {
 }
 
 fn main() {
-    webots::run::<Participant>();
+    webots::run_robot::<Participant>();
 }
