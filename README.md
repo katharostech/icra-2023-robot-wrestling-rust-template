@@ -54,4 +54,6 @@ fn main() {
 }
 ```
 
-[1]: https://webots.cloud/run?version=R2022b&url=https%3A%2F%2Fgithub.com%2Fcyberbotics%2Fwrestling%2Fblob%2Fmain%2Fworlds%2Fwrestling.wbt&type=competition "Leaderboard"
+Note that the controllers [Dockerfile](controllers/Dockerfile) was also modified to include the installation of Rust.
+
+[1]: https://webots.cloud/run?version=R2022b&url=https%3A%2F%2Fgithub.com%2Fcyberbotics%2Fwrestling%2Fblob%2Fcompetition%2Fworlds%2Fwrestling.wbt&type=competition "Leaderboard"
