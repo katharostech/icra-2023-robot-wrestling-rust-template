@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-webots = { git = "https://github.com/katharostech/webots-rust" }
+webots = { git = "https://github.com/katharostech/webots-rust", rev = "6bce1951dfcbe85a5819355aab2e9cde6fb69549" }

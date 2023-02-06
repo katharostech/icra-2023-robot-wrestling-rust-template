@@ -211,7 +211,7 @@ checksum = "84a22b9f218b40614adcb3f4ff08b703773ad44fa9423e4e0d346d5db86e4ebc"
 [[package]]
 name = "webots"
 version = "0.1.0"
-source = "git+https://github.com/katharostech/webots-rust#6bce1951dfcbe85a5819355aab2e9cde6fb69549"
+source = "git+https://github.com/katharostech/webots-rust?rev=6bce1951dfcbe85a5819355aab2e9cde6fb69549#6bce1951dfcbe85a5819355aab2e9cde6fb69549"
 dependencies = [
  "bindgen",
 ]
