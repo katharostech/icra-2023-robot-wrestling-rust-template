@@ -1,5 +1,6 @@
 {
   "name": "Ferris (Rust)",
   "description": "Minimalist Rust controller example for the Robot Wrestling Tournament.",
-  "country": "demo"
+  "country": "demo",
+  "programming": "Rust"
 }
