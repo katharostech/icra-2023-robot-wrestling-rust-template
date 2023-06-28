@@ -1,5 +1,5 @@
 # Rust build stage
-FROM cyberbotics/webots.cloud:R2023a-ubuntu20.04 as build
+FROM cyberbotics/webots:R2023b-ubuntu22.04 as build
 
 # Install Rust
 RUN mkdir /tmp/installrust && \
